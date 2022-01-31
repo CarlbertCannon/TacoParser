@@ -74,8 +74,8 @@ namespace LoggingKata
                     
                     var loctionB = locations[j];
                     var corB = new GeoCoordinate();
-                    corB.Latitude = loctionA.Location.Latitude;
-                    corB.Longitude = loctionA.Location.Longitude;
+                    corB.Latitude = loctionB.Location.Latitude;
+                    corB.Longitude = loctionB.Location.Longitude;
                     if (corA.GetDistanceTo(corB) > distance)
                     {
                         distance = corA.GetDistanceTo(corB);
